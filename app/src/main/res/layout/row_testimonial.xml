@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_testimonial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_25"
+        android:background="@drawable/rounded_corner_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.appsolace.estore.View.CustomTextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_80"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                apps:fontName="@string/ubuntu_b" />
+
+
+            <com.appsolace.estore.View.CustomTextView
+                android:id="@+id/txt_dcription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text=""
+                android:textColor="@color/gray_107"
+                android:textSize="14sp"
+                apps:fontName="@string/ubuntu_r" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/testmonial_image"
+            android:layout_width="@dimen/height_60"
+            android:layout_height="@dimen/height_60"
+            android:src="@mipmap/ic_launcher" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

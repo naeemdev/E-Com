@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:background="@color/grey_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_100"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_5"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingTop="@dimen/margin_5">
+
+        <com.appsolace.estore.View.CustomTextView
+            android:id="@+id/txt_attribute_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="start"
+            android:text="asasfascacsasca"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_14"
+            app:fontName="@string/ubuntu_r" />
+
+        <com.appsolace.estore.View.CustomTextView
+            android:id="@+id/txt_attribute_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="sasfafsasfasf"
+            android:textColor="@color/gray_100"
+            android:textSize="@dimen/font_14"
+            app:fontName="@string/ubuntu_r" />
+
+    </LinearLayout>
+</LinearLayout>

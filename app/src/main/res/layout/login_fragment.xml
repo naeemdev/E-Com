@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_info_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/height_40"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18"></TextView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_main_padding_left_right_top"
+            android:paddingLeft="@dimen/layout_main_padding_left_right_top"
+            android:paddingRight="@dimen/layout_main_padding_left_right_top"
+            android:paddingTop="@dimen/layout_main_padding_left_right_top">
+
+
+            <!--android:layout_height="@dimen/layout_email_password_height"-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white"
+                android:orientation="vertical"
+                android:padding="@dimen/layout_email_password_padding_all">
+
+                <com.appsolace.estore.View.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edt_email_margin_top"
+                    android:text="@string/username"
+                    android:textColor="@color/light_black_gray"
+                    android:textSize="@dimen/txt_email_password_text_size"
+                    app:fontName="@string/ubuntu_r" />
+
+                <com.appsolace.estore.View.CustomEditTextView
+                    android:id="@+id/edtEmail_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edt_email_password_margin_top"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/email_icon"
+                    android:drawablePadding="@dimen/edt_email_password_drawable_padding"
+                    android:hint="@string/email_add_hint"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="@dimen/edt_email_password_text_size"
+                    app:fontName="@string/ubuntu_r" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_email_password_height"
+                    android:layout_marginTop="@dimen/view_email_password_margin_top"
+                    android:background="@color/light_gray" />
+
+                <com.appsolace.estore.View.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/txt_password_margin_top"
+                    android:text="@string/password"
+                    android:textColor="@color/light_black_gray"
+                    android:textSize="@dimen/txt_email_password_text_size"
+                    app:fontName="@string/ubuntu_r" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.appsolace.estore.View.CustomEditTextView
+                        android:id="@+id/edtPassword_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/edt_email_password_margin_top"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/password_icon"
+                        android:drawablePadding="@dimen/edt_email_password_drawable_padding"
+                        android:hint="@string/password_hint"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_gray"
+                        android:textSize="@dimen/edt_email_password_text_size"
+                        app:fontName="@string/ubuntu_r" />
+
+                    <ImageView
+                        android:id="@+id/imgPassword"
+                        android:layout_width="@dimen/img_password_width_height"
+                        android:layout_height="@dimen/img_password_width_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/edt_email_password_margin_top"
+                        android:src="@drawable/hide_password" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_email_password_height"
+                    android:layout_marginTop="@dimen/view_email_password_margin_top"
+                    android:background="@color/light_gray" />
+
+
+                <com.appsolace.estore.View.CustomTextView
+                    android:id="@+id/txtForgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/txt_forgot_password_margin_top"
+                    android:gravity="center"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txt_forgot_password_text_size"
+                    app:fontName="@string/ubuntu_r" />
+
+
+            </LinearLayout>
+
+            <com.appsolace.estore.View.CustomTextView
+                android:id="@+id/txtLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_login_fblogin_margin_top"
+                android:background="@drawable/rounded_corner_red"
+                android:gravity="center"
+                android:padding="@dimen/layout_login_fblogin_padding_all"
+                android:text="@string/Login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_login_fblogin_text_size"
+                android:textStyle="bold"
+                app:fontName="@string/ubuntu_b" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_email_password_height"
+                android:layout_marginBottom="@dimen/view_email_password_margin_top"
+                android:layout_marginTop="@dimen/view_email_password_margin_top"
+                android:background="@color/light_gray" />
+
+
+            <LinearLayout
+                android:id="@+id/layoutFBLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_corner_blue"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/layout_login_fblogin_padding_all">
+
+                <ImageView
+                    android:layout_width="@dimen/img_facebook_width_height"
+                    android:layout_height="@dimen/img_facebook_width_height"
+                    android:layout_marginRight="@dimen/img_facebook_margin_right"
+                    android:src="@drawable/facebook" />
+
+                <com.appsolace.estore.View.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/login_facebook"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_login_fblogin_text_size"
+                    app:fontName="@string/ubuntu_b" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

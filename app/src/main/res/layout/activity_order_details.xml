@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_gray"
+    android:orientation="vertical"
+    tools:context=".Actvity.ActivityOrderDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/ly_back"
+            android:layout_width="@dimen/height_50"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_arrow" />
+
+        </RelativeLayout>
+
+        <com.appsolace.estore.View.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/order_details"
+            android:textColor="@color/white_100"
+            android:textSize="@dimen/font_16"
+            app:fontName="@string/ubuntu_m" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.appsolace.estore.View.CustomTextView
+                android:id="@+id/txt_ordernoanddate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_7"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text="@string/your_order"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_16"
+                app:fontName="@string/ubuntu_m" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_100"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_7">
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/status"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_15"
+                        app:fontName="@string/ubuntu_r" />
+
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_cancle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:background="@color/gray_100"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_3"
+                        android:text="@string/cancel"
+                        android:textColor="@color/white_100"
+                        android:textSize="@dimen/font_15"
+                        app:fontName="@string/ubuntu_m" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray1" />
+            </LinearLayout>
+
+            <com.appsolace.estore.View.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_7"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="@string/delivery_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_16"
+                app:fontName="@string/ubuntu_m" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_100"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_7">
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_14"
+                        app:fontName="@string/ubuntu_m" />
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_14"
+                        app:fontName="@string/ubuntu_r" />
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_14"
+                        app:fontName="@string/ubuntu_r" />
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_14"
+                        app:fontName="@string/ubuntu_r" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray1" />
+            </LinearLayout>
+
+            <com.appsolace.estore.View.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/margin_7"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="@string/items_order"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_16"
+                app:fontName="@string/ubuntu_m" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray1" />
+
+                <LinearLayout
+                    android:id="@+id/layout_addproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_100"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@color/white_100"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_7">
+
+                <com.appsolace.estore.View.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/font_15"
+                    app:fontName="@string/ubuntu_r" />
+
+
+                <com.appsolace.estore.View.CustomTextView
+                    android:id="@+id/txt_pament"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|right"
+                    android:padding="@dimen/margin_3"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/font_15"
+                    app:fontName="@string/ubuntu_r" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_100"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_7">
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtotol"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_15"
+                        app:fontName="@string/ubuntu_r" />
+
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_subtotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|right"
+                        android:padding="@dimen/margin_3"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_15"
+                        app:fontName="@string/ubuntu_r" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_100"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_7">
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shipping"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_15"
+                        app:fontName="@string/ubuntu_r" />
+
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_shipping"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|right"
+                        android:padding="@dimen/margin_3"
+                        android:text="@string/free"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_15"
+                        app:fontName="@string/ubuntu_r" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_100"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_7">
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_tax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tax"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_15"
+                        app:fontName="@string/ubuntu_r" />
+
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_taxwithtotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|right"
+                        android:padding="@dimen/margin_3"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_15"
+                        app:fontName="@string/ubuntu_r" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:background="@color/gray1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_100"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_7">
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_15"
+                        app:fontName="@string/ubuntu_r" />
+
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|right"
+                        android:padding="@dimen/margin_3"
+                        android:textColor="@color/black_gray"
+                        android:textSize="@dimen/font_15"
+                        app:fontName="@string/ubuntu_r" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:background="@color/gray1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

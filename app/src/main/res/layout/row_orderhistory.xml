@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutClick">
+
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_orderview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hafl_round_gray"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_7">
+
+            <LinearLayout
+                android:id="@+id/layout_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_orderno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/order_no"
+                        android:textColor="@color/white_100"
+                        android:textSize="@dimen/font_18"
+                        app:fontName="@string/ubuntu_b" />
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_placeon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_3"
+                        android:gravity="center_horizontal"
+                        android:text="@string/placed_on"
+                        android:textColor="@color/white_100"
+                        android:textSize="@dimen/font_12"
+                        app:fontName="@string/ubuntu_r" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_arrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/height_35"
+                        android:layout_height="@dimen/height_35"
+                        android:src="@drawable/right_arrow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:orientation="horizontal">
+
+                <com.appsolace.estore.View.CustomTextView
+                    android:id="@+id/txt_price_and_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/EUR"
+                    android:textColor="@color/white_100"
+                    android:textSize="@dimen/font_14"
+                    app:fontName="@string/ubuntu_r" />
+
+                <com.appsolace.estore.View.CustomTextView
+                    android:id="@+id/txt_cancle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:background="@drawable/sqaure_white"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/margin_2"
+                    android:text="@string/cancel"
+                    android:textColor="@color/white_100"
+                    android:textSize="@dimen/font_14"
+                    app:fontName="@string/ubuntu_r" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_100"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/layout_addimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_2"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

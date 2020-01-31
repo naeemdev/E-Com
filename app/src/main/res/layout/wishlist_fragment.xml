@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_12"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:clipToPadding="false"
+                        android:scrollbars="none"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                    <LinearLayout
+                        android:id="@+id/lay_arcloader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <com.appsolace.estore.customanimation.SimpleArcLoader
+                            android:id="@+id/arc_loader"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            app:arc_speed="fast"
+                            app:arc_style="simple_arc"
+                            app:arc_thickness="2dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="150dp"
+                    android:visibility="visible">
+
+                    <include
+                        android:id="@+id/lyt_no_item"
+                        layout="@layout/include_no_item"
+                        android:visibility="gone" />
+
+                    <include
+                        android:id="@+id/lyt_failed"
+                        layout="@layout/include_failed"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ly_shopnow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/white_100"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/empty_wishlist" />
+
+            <com.appsolace.estore.View.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wishlist_empty"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_22"
+                app:fontName="@string/Montserrat_regular" />
+
+            <com.appsolace.estore.View.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noitem_wishlist"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/font_19"
+                app:fontName="@string/Montserrat_regular" />
+
+            <com.appsolace.estore.View.CustomTextView
+                android:id="@+id/txt_shopnow"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_60"
+                android:gravity="center"
+                android:text="@string/shopnow"
+                android:paddingLeft="@dimen/margin_25"
+                android:paddingRight="@dimen/margin_25"
+                android:layout_marginTop="@dimen/margin_40"
+                android:textColor="@color/white_100"
+                android:background="@drawable/rounded_corner_red"
+                android:textSize="@dimen/heading_text_size"
+                app:fontName="@string/ubuntu_r" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

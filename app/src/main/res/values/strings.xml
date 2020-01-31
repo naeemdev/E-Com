@@ -1,0 +1,254 @@
+<resources>
+    <string name="app_name">E-Comm</string>
+    <string name="title_activity_main2">Main Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!--Fonts file -->
+    <string name="Montserrat_regular">Montserrat-Regular.ttf</string>
+    <string name="ubuntu_b">Ubuntu-B.ttf</string>
+    <string name="ubuntu_r">Ubuntu-R.ttf</string>
+    <string name="ubuntu_l">Ubuntu-L.ttf</string>
+    <string name="ubuntu_m">Ubuntu-M.ttf</string>
+
+    <!-- FACEBOOK CREDENTIAL-->
+    <string name="facebook_app_id">3123123123</string>
+    <string name="fb_login_protocol_scheme">fb231223123213123</string>
+    <string name="facebook_popup_string">Your account is not yet registered with E-Comm, would you like to register now?</string>
+
+    <string name="account_lock">Your account has been temporarily locked. Please contact our admin for further details.</string>
+
+
+    <string name="Login">Login</string>
+    <string name="Registration">Register</string>
+    <string name="login_facebook">login via facebook</string>
+
+    <string name="email">Email Address</string>
+    <string name="email_add_hint">Enter email address</string>
+
+    <string name="password">Password</string>
+    <string name="password_hint">Enter password</string>
+    <string name="forgot_password">forgot password? </string>
+
+    <string name="username">Username</string>
+    <string name="user_add_hint">Enter username</string>
+
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="confirmpassword_hint">Enter password</string>
+    <string name="confirm">confirm password </string>
+    <string name="sub">Subscribe to latest updates and offers. </string>
+    <string name="title_activity_main">E-Comm</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="Twitter">Twitter</string>
+    <string name="Policies">Policies</string>
+    <string name="PrivacyPolicy">Privacy Policy  </string>
+    <string name="Terms_Conditions">Terms &amp; Conditions  </string>
+    <string name="Cancellation_Return">Cancellation &amp; Return  </string>
+    <string name="MoreDeatail">More Details</string>
+    <string name="SecurePayment">Secure Payment</string>
+    <string name="Delivary">Delivary</string>
+    <string name="FAQ">FAQ</string>
+    <string name="AboutUs">About Us</string>
+    <string name="WriteUs">Write Us</string>
+    <string name="RatethisApp">Rate This App</string>
+    <string name="Rate_Share">Rate / Share</string>
+    <string name="ShareThisApp">Share This App</string>
+    <string name="FollowUs">Follow Us</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Home">Home</string>
+    <string name="ShopbyCategories">Shop by Categories</string>
+    <string name="ShopingCart">Shopping Cart</string>
+    <string name="WishList">Wish List</string>
+    <string name="Orderhistory">Order History</string>
+    <string name="Testimonials">Testimonials</string>
+    <string name="MyAccount">My Account</string>
+    <string name="Login_Signup">Login / Sign Up </string>
+    <string name="ContactUs">Contact Us</string>
+    <string name="CallUs">Call Us </string>
+    <string name="Logout">Logout</string>
+
+    <string name="dynamictab"> Welcome to india </string>
+    <string name="addtab">Add Tab</string>
+
+    <string name="Sort">SORT</string>
+    <string name="Filter">FILTER</string>
+
+    <string name="hometab">HOME</string>
+    <string name="mentab">MEN</string>
+    <string name="womentab">WOMEN</string>
+    <string name="kidstab">KIDS</string>
+
+    <string name="Welcome">WELCOME</string>
+    <string name="Welcome_dasc">E-Commerce is Premium Online Shopping Platform for Everyone</string>
+
+    <string name="Discover">DISCOVER PRODUCT</string>
+    <string name="Discover_dasc">Search latest and Features Product With Best Price</string>
+
+    <string name="continue_guest">CONTINUE AS GUEST</string>
+
+    <string name="RESET">Reset</string>
+    <string name="DONE">Done</string>
+    <string name="ok">Ok</string>
+    <string name="YES">YES</string>
+    <string name="NO">NO</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="TRY_AGAIN">TRY AGAIN</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="out_of_stock">Out of stock</string>
+
+    <string name="no_item">No More Item found</string>
+    <string name="no_data">No data found</string>
+
+    <string name="loading_text">Please wait while we loading..</string>
+    <string name="error">Server not responding please try to again</string>
+
+    <string name="product">Products</string>
+    <string name="all_in">All in</string>
+    <string name="Addtocart">Add To Cart</string>
+
+    <string name="size">Size :</string>
+    <string name="color">Color :</string>
+    <string name="prod_info_care">Product Info and Care</string>
+    <string name="EUR">EUR</string>
+
+    <string name="matchwith">Match It With</string>
+    <string name="recentlyview">Recently Viewed</string>
+    <string name="New_Products">New Products</string>
+
+    <string name="our_popular_category">OUR POPULAR CATEGORY</string>
+    <string name="shopnow">SHOP NOW</string>
+    <string name="wishlist_empty">Your wishlist is empty!</string>
+    <string name="noitem_wishlist">There are no items in your wishlist.</string>
+    <string name="remove_wishlist">Product has been removed from your wishlist.</string>
+
+    <string name="shopcart_empty">Your cart is empty!</string>
+    <string name="additem_shopcart">Add items to it now.</string>
+
+    <string name="Register_succes">Your register seccessfully.</string>
+    <string name="profile_succes">profile update successfully.</string>
+    <string name="changepassword_succes">password change successfully.</string>
+
+
+    <string name="delete_confirmation">Are you sure want to delete ?</string>
+    <string name="logout_confirmation">Are you sure want to logout ?</string>
+    <string name="exit_confirmation">Are you sure want to exit ?</string>
+    <string name="login_confirmation">Your data is unsaved. Are you sure you want to go back ?</string>
+
+
+    <string name="password_valid">Please enter password with letter &amp; numbers</string>
+    <string name="password_length">Password length must be between 6-32 characters</string>
+    <string name="enter_username">Please Enter User name</string>
+    <string name="enter_email">Please Enter Email address</string>
+    <string name="enter_valid_email">Please Enter valid email address</string>
+    <string name="enter_password">Please Enter Password</string>
+    <string name="enter_cnfpassword">Please Enter Confirm Password</string>
+    <string name="enter_pass_notmatch">Password &amp; Confirm Password does\'t match</string>
+
+    <string name="personal_info">Personal Info</string>
+    <string name="name">Name</string>
+    <string name="email1">Email</string>
+    <string name="update">UPDATE</string>
+
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="required">Required</string>
+    <string name="CHANGE_PASSWORD">CHANGE PASSWORD</string>
+
+    <string name="enter_cur_password">Please Enter current Password</string>
+    <string name="enter_new_password">Please Enter new Password</string>
+    <string name="enter_newpass_notmatch">New Password &amp; Confirm Password does\'t match</string>
+    <string name="enter_curpass_notmatch">Password &amp; Currnt Password does\'t match</string>
+
+    <string name="order_no">Order No.</string>
+    <string name="placed_on">Placed on </string>
+    <string name="cancelled">cencelled</string>
+    <string name="cancel">cencel</string>
+    <string name="item">item</string>
+    <string name="order_details">Order Details</string>
+
+    <!--Order details-->
+    <string name="your_order">Your order</string>
+    <string name="placeon">placed on</string>
+    <string name="status">Status:</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="items_order">Items in your Order</string>
+    <string name="payment">Payment</string>
+    <string name="cod">Cash on delivery (COD)</string>
+    <string name="subtotol">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="free">FREE</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="phone">Phone:</string>
+
+    <!--Shoping cart-->
+    <string name="your_shoppingbag">Your shopping bag details</string>
+    <string name="add_list_wish">Add more from your list wish</string>
+    <string name="proceed_checkout">PROCEED TO CHECKOUT</string>
+
+    <!-- product sort-->
+    <string name="popular">popular</string>
+    <string name="high">high</string>
+    <string name="low">low</string>
+    <string name="Product_sort">Product Sort</string>
+
+    <!--Filter-->
+    <string name="filter">Filter</string>
+    <string name="clearall">CLEAR ALL</string>
+    <string name="apply">APPLY</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="select_min">Selected Minimum :</string>
+    <string name="select_max">Selected Maximum :</string>
+
+    <string name="please_size">Please select size and color.</string>
+    <string name="outofstock">Ooops! We are currently running out of stock for this product..</string>
+    <string name="order_successfully"> Your order is add to cart successfully.</string>
+
+
+    <string name="select_address">Select Address</string>
+    <string name="select_deli_address">Select a delivery address</string>
+    <string name="Phone">Phone :</string>
+    <string name="add_address">Add an address details</string>
+    <string name="edit_address">Edit an address details</string>
+    <string name="add_address1">Add Address</string>
+    <string name="edit_address1">Edit Address</string>
+
+    <string name="address">Address</string>
+    <string name="pincode">Pincode</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="Phone1">Phone</string>
+
+    <string name="enter_name">Please enter name</string>
+    <string name="enter_address">Please enter address</string>
+    <string name="enter_pincode">Please enter pincode</string>
+    <string name="enter_city">Please enter city</string>
+    <string name="enter_state">Please enter state</string>
+    <string name="enter_phone">Please enter phone</string>
+
+    <string name="select_payment">Select Payment</string>
+    <string name="cod1">Cash on Delivery</string>
+    <string name="place_order">PLACE ORDER</string>
+
+    <string name="place_order_successful">Your order has been place successfully.</string>
+
+    <!--thank you-->
+
+    <string name="thank">Thank you for your order!</string>
+    <string name="thank_order_id">Your order has been place and order ID is</string>
+    <string name="thank_phone">you will soon receive an automated call on phone number</string>
+    <string name="thank_confirm_order">for order confirmation. please press 1 to conbfirm your order.</string>
+
+    <string name="thank1">Once the order is shipped, you will receive the tracking details yb email.</string>
+    <string name="thank2">For any quations or for further information, please contact our customer support.</string>
+
+    <string name="view_order_history">View Order History</string>
+    <string name="go_home">Go Home</string>
+
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dialog"
+        android:gravity="center"
+        android:padding="@dimen/layout_parent_driver_rating_padding_all">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_header_margin_top"
+                android:background="@drawable/rounded_corner_white"
+                android:gravity="center_vertical|start"
+                android:orientation="vertical">
+
+                <!--android:layout_marginRight="@dimen/layout_close_margin_top_right"
+                android:layout_marginTop="@dimen/layout_close_margin_top_right"-->
+                <LinearLayout
+                    android:id="@+id/layoutClose"
+                    android:layout_width="@dimen/layout_close_width_height"
+                    android:layout_height="@dimen/layout_close_width_height"
+                    android:layout_gravity="right|top"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <ImageButton
+                        android:id="@+id/image_close"
+                        android:layout_width="@dimen/imgclose_width_heigth1"
+                        android:layout_height="@dimen/imgclose_width_heigth1"
+                        android:background="@drawable/close" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dialog_margin_10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/txtusername_carno_margin_left_right"
+                        android:layout_marginRight="@dimen/txtusername_carno_margin_left_right"
+                        android:layout_marginTop="@dimen/dialog_margin_5"
+                        android:orientation="vertical">
+
+                        <com.appsolace.estore.View.CustomTextView
+                            android:id="@+id/txt_msg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/Product_sort"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/dialog_text"
+                            app:fontName="@string/ubuntu_m" />
+
+                        <RadioGroup
+                            android:id="@+id/radiogroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/txtusername_carno_margin_left_right"
+                            android:layout_marginRight="@dimen/txtusername_carno_margin_left_right"
+                            android:layout_marginTop="@dimen/gender_margin_15">
+
+                            <RadioButton
+                                android:id="@+id/radio1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="@string/popular"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/gender_text"
+                                android:theme="@style/MyRadioButton" />
+
+                            <RadioButton
+                                android:id="@+id/radio2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/gender_margin_5"
+                                android:checked="false"
+                                android:text="@string/high"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/gender_text"
+                                android:theme="@style/MyRadioButton" />
+
+                            <RadioButton
+                                android:id="@+id/radio3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/gender_margin_5"
+                                android:checked="false"
+                                android:text="@string/low"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/gender_text"
+                                android:theme="@style/MyRadioButton" />
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutSubmit_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dialog_margin_10"
+                    android:gravity="center">
+
+
+                    <com.appsolace.estore.View.CustomTextView
+                        android:id="@+id/txt_yes"
+                        android:layout_width="@dimen/height_120"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_corner_red"
+                        android:gravity="center"
+                        android:padding="@dimen/dialog_margin_5"
+                        android:text="@string/ok"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white_100"
+                        android:textSize="@dimen/dialog_text"
+                        app:fontName="@string/ubuntu_b" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/layout_profile_width_height"
+                    android:layout_height="@dimen/layout_profile_width_height"
+                    android:padding="2dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutProfile"
+                        android:layout_width="@dimen/layout_profile_width_height"
+                        android:layout_height="@dimen/layout_profile_width_height"
+                        android:gravity="center"
+                        android:padding="0dp">
+
+                        <ImageView
+                            android:id="@+id/imgDriverPicture"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:src="@mipmap/ic_launcher" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

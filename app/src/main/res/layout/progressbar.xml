@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dialog"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.appsolace.estore.View.CustomTextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_50"
+            android:gravity="center"
+            android:text="@string/loading_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_22"
+            android:textStyle="bold"
+            app:fontName="@string/ubuntu_b" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/height_90"
+            android:layout_height="@dimen/height_90"
+            android:indeterminateDrawable="@drawable/progress_icon" />
+
+    </LinearLayout>
+</RelativeLayout>

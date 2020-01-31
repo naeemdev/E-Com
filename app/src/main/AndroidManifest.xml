@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appsolace.estore">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".Utili.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Actvity.ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Actvity.Intro_Viewpager_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Actvity.ActivityLoginRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.ActivitySubCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.ActivityCategoryProduct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.ActivityProductDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.ActivityNewProductDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.ActivityMatchProductDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.ActivityRecentlyProductDetails"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Actvity.ActivityOrderDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.ProductImagepager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.NewProductImagepager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.MatchProductImagepager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Actvity.RecentProductImagepager"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Actvity.ProductFilter" />
+        <activity android:name=".Actvity.ActivityAddressList" />
+        <activity android:name=".Actvity.ActivityAddAddress" />
+        <activity android:name=".Actvity.ActivityPayment" />
+        <activity android:name=".Actvity.ActivityThank"></activity>
+    </application>
+
+</manifest>

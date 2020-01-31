@@ -1,0 +1,154 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="login_margin_5">5dp</dimen>
+    <dimen name="login_margin_10">10dp</dimen>
+    <dimen name="login_margin_15">15dp</dimen>
+    <dimen name="login_margin_20">20dp</dimen>
+
+    <!--Login-->
+    <dimen name="layout_title_padding_all">15dp</dimen>
+    <dimen name="img_logo_width_height">34dp</dimen>
+    <dimen name="title_text_size">19sp</dimen>
+    <dimen name="img_logo_margin_right">25dp</dimen>
+    <dimen name="heading_text_size">22sp</dimen>
+    <dimen name="view_height">0.6dp</dimen>
+
+
+    <!--LOGIN SCREEN-->
+    <dimen name="layout_main_padding_left_right_top">23dp</dimen>
+    <dimen name="layout_main_padding_bottom">23dp</dimen>
+    <dimen name="layout_email_password_padding_all">27dp</dimen>
+    <item name="layout_email_password_weight" type="dimen" format="float">0.3</item>
+    <item name="layout_login_fblogin_weight" type="dimen" format="float">0.2</item>
+    <dimen name="txt_forgot_password_height_login">25dp</dimen>
+    <dimen name="txt_email_password_text_size">16sp</dimen>
+    <dimen name="edt_email_password_text_size">15sp</dimen>
+    <dimen name="edt_email_password_margin_top">12dp</dimen>
+    <dimen name="edt_email_password_drawable_padding">10dp</dimen>
+    <dimen name="view_email_password_height">0.75dp</dimen>
+    <dimen name="view_email_password_margin_top">9dp</dimen>
+    <dimen name="txt_password_margin_top">32dp</dimen>
+    <dimen name="edt_email_margin_top">10dp</dimen>
+    <dimen name="txt_forgot_password_margin_top">30dp</dimen>
+    <dimen name="txt_forgot_password_text_size">15sp</dimen>
+    <dimen name="layout_login_fblogin_margin_top">27dp</dimen>
+    <dimen name="layout_login_fblogin_padding_all">16dp</dimen>
+    <dimen name="txt_login_fblogin_text_size">16sp</dimen>
+    <dimen name="view_fblogin_height">1dp</dimen>
+    <dimen name="img_facebook_margin_right">14dp</dimen>
+    <dimen name="img_facebook_width_height">18dp</dimen>
+    <dimen name="layout_login_fblogin_height">190dp</dimen>
+    <dimen name="layout_email_password_height">270dp</dimen>
+
+    <dimen name="tablayout_indicator_height">0.9dp</dimen>
+    <dimen name="tablayout_indicator_height1">1.5dp</dimen>
+    <dimen name="tablayout_height">55dp</dimen>
+    <dimen name="tablayout_text_size">15sp</dimen>
+    <dimen name="tablayout_text_size1">13sp</dimen>
+    <dimen name="tablayout_headertext_size">25sp</dimen>
+    <dimen name="tablayout_headertext1_size">20sp</dimen>
+
+    <dimen name="switch_width">45dp</dimen>
+    <dimen name="switch_height">25dp</dimen>
+
+    <dimen name="min_height_featured_news">100dp</dimen>
+
+    <dimen name="pager_height">200dp</dimen>
+    <dimen name="frag_news_rv_height">80dp</dimen>
+    <dimen name="frag_news_rv_margin_top">144dp</dimen>
+    <dimen name="frag_news_fab_margin_right">15dp</dimen>
+    <dimen name="frag_news_dot_margin_bottom">52dp</dimen>
+
+    <!--Slide Screen-->
+    <dimen name="slide_dot_size">8dp</dimen>
+    <dimen name="slide_margin_10">10dp</dimen>
+    <dimen name="slide_margin_15">15dp</dimen>
+    <dimen name="slide_margin_20">20dp</dimen>
+    <dimen name="slide_button">50dp</dimen>
+    <dimen name="slide_center_image_top">120dp</dimen>
+    <dimen name="slide_center_image_bottom">50dp</dimen>
+    <dimen name="slide_center_image_size_width">80dp</dimen>
+    <dimen name="slide_center_image_size_height">160dp</dimen>
+    <dimen name="slide_size_text">26sp</dimen>
+    <dimen name="slide_size_subtext">16sp</dimen>
+
+    <!--DAILOG SCREEN-->
+    <dimen name="layout_parent_driver_rating_padding_all">8dp</dimen>
+    <dimen name="layout_header_margin_top">50dp</dimen>
+    <dimen name="layout_close_width_height">40dp</dimen>
+    <dimen name="layout_close_margin_top_right">17dp</dimen>
+    <dimen name="imgclose_width_heigth">12dp</dimen>
+    <dimen name="image_circle_width">5dp</dimen>
+    <dimen name="layout_detail_margin_top">12dp</dimen>
+    <dimen name="txtusername_carno_margin_left_right">13dp</dimen>
+    <dimen name="txtusername_text_size_driver_booking">22sp</dimen>
+    <dimen name="txt_carno_margin_top">20dp</dimen>
+    <dimen name="txt_carno_text_size">19sp</dimen>
+    <dimen name="rating_size">35dp</dimen>
+    <dimen name="rating_separater">5dp</dimen>
+    <dimen name="txt_price_margin_top">21dp</dimen>
+    <dimen name="txt_price_text_size_driver">25sp</dimen>
+    <dimen name="view_margin_left_right">20dp</dimen>
+    <dimen name="view_margin_top_driver_rating">23dp</dimen>
+    <dimen name="txt_rateyourtrip_margin_top">19dp</dimen>
+    <dimen name="txt_rateyourtrip_text_size">19sp</dimen>
+    <dimen name="layout_ratingbar_margin_top">28dp</dimen>
+    <dimen name="layout_submit_rating_margin_top">37dp</dimen>
+    <dimen name="btn_submit_rating_height">57dp</dimen>
+    <dimen name="btn_submit_text_size">20sp</dimen>
+    <dimen name="layout_profile_width_height">90dp</dimen>
+    <dimen name="img_profile_width_height">70dp</dimen>
+    <dimen name="txt_rating_width_height">45dp</dimen>
+    <dimen name="txt_rating_margin_right">4dp</dimen>
+    <dimen name="txt_rating_margin_top">-3dp</dimen>
+    <dimen name="txt_rating_text_size">16sp</dimen>
+    <dimen name="image_round">40dp</dimen>
+    <dimen name="wallet_circle_width">50dp</dimen>
+
+    <dimen name="red_right">15dp</dimen>
+    <dimen name="red_bottom">50dp</dimen>
+    <dimen name="red_width">15dp</dimen>
+    <dimen name="image_round1">30dp</dimen>
+
+    <!--Dialog gender-->
+    <dimen name="gender_submit">23sp</dimen>
+    <dimen name="gender_text">20sp</dimen>
+    <dimen name="gender_margin_5">5dp</dimen>
+    <dimen name="gender_margin_10">10dp</dimen>
+    <dimen name="gender_margin_15">15dp</dimen>
+
+
+    <!--Dialog alert-->
+    <dimen name="dialog_submit">23sp</dimen>
+    <dimen name="dialog_text">18sp</dimen>
+    <dimen name="dialog_text_small">14sp</dimen>
+    <dimen name="dialog_margin_5">5dp</dimen>
+    <dimen name="dialog_margin_10">10dp</dimen>
+    <dimen name="dialog_margin_15">15dp</dimen>
+    <dimen name="dialog_margin_20">20dp</dimen>
+    <dimen name="dialog_margin_25">25dp</dimen>
+    <dimen name="dialog_pinview_width">40dp</dimen>
+
+    <!-- Slide menu-->
+    <dimen name="menu_height">190dp</dimen>
+    <dimen name="menu_image">120dp</dimen>
+    <dimen name="menu_listimage">25dp</dimen>
+    <dimen name="menu_text">19sp</dimen>
+    <dimen name="menu_textlist">16sp</dimen>
+    <dimen name="menu_text1">16sp</dimen>
+    <dimen name="menu_margin_4">3dp</dimen>
+    <dimen name="menu_margin_5">5dp</dimen>
+    <dimen name="menu_margin_8">6dp</dimen>
+    <dimen name="menu_margin_10">8dp</dimen>
+    <dimen name="menu_margin_13">11dp</dimen>
+    <dimen name="menu_margin_15">15dp</dimen>
+    <dimen name="menu_viewheight">15dp</dimen>
+    <dimen name="menu_view">1dp</dimen>
+    <dimen name="drawer">260dp</dimen>
+
+</resources>
